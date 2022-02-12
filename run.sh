@@ -1,3 +1,3 @@
-export IMAGE_REGISTRY=localhost:41067
+export IMAGE_REGISTRY=localhost:46387
 
 ./build.sh

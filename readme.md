@@ -1,3 +1,6 @@
+Note: WSL doesnt work yet! 
+
+
 This issue was the thing that got it through. 
 
 https://github.com/k3s-io/k3s/issues/4070
