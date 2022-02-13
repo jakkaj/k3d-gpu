@@ -1,0 +1,9 @@
+---
+apiVersion: k3d.io/v1alpha4
+kind: Simple
+name: k3s-default
+servers: 1
+agents: 0
+options:
+  k3d:
+    disableHostIPInjection: true
