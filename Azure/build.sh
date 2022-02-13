@@ -5,7 +5,7 @@
 
 set -euxo pipefail
 
-K3S_TAG=${K3S_TAG:="v1.23.3-k3s1"} # replace + with -, if needed
+K3S_TAG=${K3S_TAG:="v1.23.2-k3s1"} # replace + with -, if needed
 IMAGE_REGISTRY=${IMAGE_REGISTRY:="MY_REGISTRY"}
 IMAGE_REPOSITORY=${IMAGE_REPOSITORY:="rancher/k3s"}
 IMAGE_TAG="$K3S_TAG-cuda"
@@ -23,4 +23,4 @@ echo "Done!"
 
 
 
-k3d cluster create gputest --image=$IMAGE --gpus=all --no-rollback 
+k3d cluster create gputest --image=$IMAGE --gpus=all --trace
