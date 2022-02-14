@@ -47,3 +47,20 @@ apply the correct daemonset `https://raw.githubusercontent.com/NVIDIA/k8s-device
 THen in that daemonset, add `runtimeClassName: nvidia` on the podspec. 
 
 Do not modify config.toml.tmpl and things as per other tutorials, just leave it all - since 1.22 of k3s its much simpler to get going!
+
+
+
+
+Notes:
+
+https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/getting-started.html
+
+```bash
+helm install --wait --generate-name \
+     -n gpu-operator --create-namespace \
+      nvidia/gpu-operator \
+      --set driver.enabled=false \
+      --set toolkit.enabled=false
+```
+
+https://www.google.com/search?q=k3s+nvidia.com%2Fgpu+runtimeclass&oq=k3s+nvidia.com%2Fgpu+runtimeclass&aqs=edge..69i57j69i64.3597j0j1&sourceid=chrome&ie=UTF-8
