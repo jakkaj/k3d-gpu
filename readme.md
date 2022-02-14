@@ -17,7 +17,7 @@ wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bas
 Create local container registry
 
 ```bash
-k3d registry create
+k3d registry create -p 50051
 ```
 
 Find the address of it (will show in the command that returned - `k3d-registry:35169`).
