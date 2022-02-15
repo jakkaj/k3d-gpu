@@ -2,7 +2,7 @@
 
 # [Choice] Ubuntu version (use hirsuite or bionic on local arm64/Apple Silicon): hirsute, focal, bionic
 
-FROM nvidia/cuda:11.4.0-runtime-ubuntu20.04
+FROM nvidia/cuda:11.6.0-devel-ubuntu20.04
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
