@@ -58,7 +58,7 @@ Chagne in to k3d path and run `./run.sh`
 
 # Some more info
 
-The run script applies `device-plugin-daemonset.yaml` which creates the `RuntimeClass` and the daemonset which allows the GPU stuff to work. Once you get the cluster up and running, if the daemonset comes up withotu errors then GPU is working. 
+The run script applies `device-plugin-daemonset.yaml` which creates the `RuntimeClass` and the daemonset which allows the GPU stuff to work. Once you get the cluster up and running, if the daemonset comes up without errors then GPU is working. 
 
 https://github.com/k3s-io/k3s/issues/4070
 
