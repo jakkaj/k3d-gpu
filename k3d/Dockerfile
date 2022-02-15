@@ -2,7 +2,7 @@ ARG K3S_TAG="v1.23.1-k3s1"
 
 FROM rancher/k3s:$K3S_TAG as k3s
 
-FROM nvidia/cuda:11.6.0-runtime-ubuntu18.04
+FROM nvidia/cuda:11.4.0-runtime-ubuntu18.04
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
