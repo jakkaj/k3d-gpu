@@ -1,6 +1,6 @@
 This will help create a new k3s container that supports Nvidia GPUs for use with K3D! It's been updated to support a more streamlined approach than older examples. 
 
-NOTE: This only works when the host machine (the one the container is running on) is running Linux. I've tested with LTS Ubuntu (i think 19.04, 20.04 are good... YMMV). 
+NOTE: This only works when the host machine (the one the container is running on) is running Linux. I've tested with LTS Ubuntu (i think 18.04, 20.04 are good... YMMV). 
 NOTE: WSL doesnt work yet as of Feb 15th 22! Something something nvidia something. 
 
 It's based on [https://k3d.io/v4.4.8/usage/guides/cuda/](https://k3d.io/v4.4.8/usage/guides/cuda/). It removes the containerd configs and a few other little bits (no longer needed in latest k3s, as it does it automatically when it detects nvidia stuff installed!), fixes the daemonset and adds a RuntimeClass and a few other little tunings
