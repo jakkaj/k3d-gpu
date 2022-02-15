@@ -21,7 +21,7 @@ Ensure `nvidia-smi` returns something on the host.
 
 Ensure `docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi` something from the host as well!
 
-If you're in Azure, ensure you have the NVIDIA GPU extension installed from the portal on this VM (to install the drivers). See https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux
+If you're in Azure, ensure you have the NVIDIA GPU extension installed from the portal on this VM (to install the drivers). See https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-linux.
 
 # VS Code Dev Container
 Once the docker command is returning a valid `nvidia-smi` output, you're ready to load the project in the dev container. Just open in VS Code and make sure to then re-open in dev container. 
